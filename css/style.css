@@ -51,12 +51,32 @@ table {
 /* AQUI COMECA EU  */
 
 body{
+
+	background: black;
 	color: white;
+	min-height: 100vh;
+}
+
+h1{
+	font-family: arial;
+	font-size: 24px;
+	text-align: center;
+	padding: 10px;
+}
+
+p {
+	font-family: arial;
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 10px;
 }
 header {
 	width: 100%;
-	height: 500px;
-	background: black;
+	height: 470px;
+	background-image: url("../images/background-head.jpg");
+	background-position: 50% 25%;
+	background-size: 250%;
+	background-blend-mode:luminosity ;
 	overflow: hidden;
 	border-bottom: 8px solid rgb(73, 73, 73);
 }
@@ -69,7 +89,7 @@ header #container {
 	height: 60px;
 	display: flex;
 	justify-content: space-between;
-	align-items: center
+	align-items: center;
 }
 .netflixlogo {
 	height: 30px;
@@ -124,29 +144,50 @@ select option{
 	margin: auto;
 	color: white;
 	background: red;
+	border: none;
 	padding: 14px 18px;
 	font-size: 16px;
 }
-.tv {
+#tv {
 	background: black;
-	height: 300px;
-	}
+	width: 90%;
+	height: 430px;
+	margin: auto;
+}
+.img-tv {
+	width: 95%;
+	margin: auto;
+	display: block;
+	position: relative;
+}
+.video-tv {
+	margin: auto;
+	width: 69.5%;
+	transform: translate(20%,35%);
+	position: absolute;
+}
+.section-tv-text {
+	margin-top: 40px;
+	position: relative;
+	z-index: 1;
+}
+.section-tv-video-img {
+	transform: translateY(-10%);
+}
 
 
-	@media screen and (min-width: 756px) {
+	/* @media screen and (min-width: 756px) {
 
 .input-button-header {
 	display: flex;
 	justify-content: space-around;
 }
-
 #email {
 	width: 35%;
 	height: 40px;
 	display: inline-block;
 	margin: auto;	
 }
-	
 .btnletsgo {
 	color: white;
 	display:inline-block;
@@ -155,12 +196,12 @@ select option{
 	padding: 14px 18px;
 	font-size: 16px;
 	cursor: pointer;
-		}
+}
 
 
 
 
-	}
+	} */
 
 
 
